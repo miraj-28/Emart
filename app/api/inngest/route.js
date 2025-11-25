@@ -5,7 +5,7 @@ import {
   syncUserCreation,
   syncUserUpdation,
   syncUserDeletion,
-} from "../../../lib/inngestfunction"; // exact filename: inngestfunction.js
+} from "../../../lib/inngestfunctions"; // exact filename: inngestfunctions.js
 
 // include PUT so Inngest's verification probe doesn't 405
 export const { GET, POST, PUT } = serve({
