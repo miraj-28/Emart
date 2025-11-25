@@ -9,7 +9,7 @@ import {
   syncUserDeletion
 } from "../../../lib/inngestfunctions";
 
-export const { GET, POST } = serve({
+export const { GET, POST, PUT } = serve({
   client: inngest,
   functions: [
     syncUserCreation,
