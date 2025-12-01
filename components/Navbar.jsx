@@ -13,12 +13,13 @@ const Navbar = () => {
   const { user } = useUser();
   return (
     <nav className="flex items-center justify-between px-6 md:px-16 lg:px-32 py-3 border-b border-gray-300 text-gray-700">
-      <Image
-        className="cursor-pointer w-28 md:w-32"
+      <h1 
+        className="cursor-pointer text-3xl font-extrabold transition-all duration-300 transform hover:scale-105"
         onClick={() => router.push('/')}
-        src={assets.logo}
-        alt="logo"
-      />
+      >
+        <span className="text-orange-500 drop-shadow-md">E</span>
+        <span className="text-gray-600">mart</span>
+      </h1>
       <div className="flex items-center gap-4 lg:gap-8 max-md:hidden">
         <Link href="/" className="hover:text-gray-900 transition">
           Home
